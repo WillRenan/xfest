@@ -9,13 +9,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
-import com.example.xfest.xfest.entidades.EnderecoUF;
-import com.example.xfest.xfest.entidades.Endereco;
-import com.example.xfest.xfest.entidades.Pessoa;
 import com.example.xfest.xfest.entidades.PessoaFisica;
 import com.example.xfest.xfest.entidades.PessoaJuridica;
 import com.example.xfest.xfest.entidades.PessoaSexo;
-import com.example.xfest.xfest.entidades.PessoaTipo;
+
 
 //@EntityScan("com.exemple.xfest.xfest.entidades")
 @EntityScan

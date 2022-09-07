@@ -28,9 +28,9 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne //(targetEntity = Pessoa.class)
-    @JoinColumn(name = "pessoaID")
-    private Pessoa pessoa;
+    @ManyToOne(targetEntity = Pessoa.class)
+    @JoinColumn(name = "pessoa_ID")
+    private Pessoa pessoaEdnderecos;
 
     @Column(name="logradouro", length = 500, nullable = false)
     private String logra;
@@ -43,6 +43,12 @@ public class Endereco {
 
     @Enumerated(EnumType.STRING)
     private EnderecoUF uf;
+
+    @Override
+    public String toString() {
+        return "Endereco [bairro=" + bairro + ", cidade=" + cidade + ", id=" + id + ", logra=" + logra
+                + ", pessoaEdnderecos=" + pessoaEdnderecos + ", uf=" + uf + "]";
+    }
 
 
 
